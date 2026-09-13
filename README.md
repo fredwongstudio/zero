@@ -11,7 +11,7 @@ ZERO is a working AI hotel operator prototype that lets hotel guests press 0 and
 This is an independent Next.js / React / TypeScript / Tailwind application inside `ZERO`. Node 22 or newer is recommended; implementation was developed with Node 24. Chrome is used for the included browser checks.
 
 ```sh
-cd /Users/frederickwong/Desktop/ZERO
+cd "/Users/frederickwong/Desktop/Fred Wong Studio/ZERO"
 npm ci
 cp .env.example .env.local
 npm run dev
