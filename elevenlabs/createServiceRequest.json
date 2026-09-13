@@ -1,0 +1,37 @@
+{
+  "type": "client",
+  "name": "createServiceRequest",
+  "description": "Simulate an amenity request for the guest in Room 110. Only call after the guest has supplied a clear positive whole-number quantity. Do not call for Wi-Fi. Wait for the result before confirming success.",
+  "expects_response": true,
+  "response_timeout_secs": 10,
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "room": {
+        "type": "string",
+        "description": "The known guest room, always 110.",
+        "enum": ["110"]
+      },
+      "requestType": {
+        "type": "string",
+        "description": "Always amenity_request.",
+        "enum": ["amenity_request"]
+      },
+      "item": {
+        "type": "string",
+        "description": "Use extra_towels for towels or bottled_water for water bottles.",
+        "enum": ["extra_towels", "bottled_water"]
+      },
+      "quantity": {
+        "type": "number",
+        "description": "The positive whole-number quantity supplied by the guest. Ask if missing; never guess."
+      },
+      "department": {
+        "type": "string",
+        "description": "Always Housekeeping for both towels and water.",
+        "enum": ["Housekeeping"]
+      }
+    },
+    "required": ["room", "requestType", "item", "quantity", "department"]
+  }
+}
