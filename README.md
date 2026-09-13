@@ -2,9 +2,9 @@
 
 **Dial 0. Just ask.**
 
-An AI hotel operator prototype by Fred Wong Studio.
+A working AI hotel operator prototype by Fred Wong Studio.
 
-ZERO is a prototype exploring how an AI hotel operator can answer guest calls, understand requests, provide information and coordinate simple service requests.
+ZERO is a working AI hotel operator prototype that lets hotel guests press 0 and speak naturally to an AI operator.
 
 ## Run locally
 
